@@ -1,0 +1,129 @@
+<html>
+
+	<head>
+		<!-- css for formatting titles and general web page-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/web-format.css">
+        
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+        
+		<!-- we want to use D3, so this is where D3.js gets called-->
+		<script type="text/javascript" src="libraries/d3/d3.v3.min.js"></script> 
+		
+		<!--title of the webpage-->
+		<title> Nobel Prize Winners </title>
+		
+	</head>
+
+	<body>
+        <section class="container padding">
+            
+            <div class="padding"></div>
+            <h1> Visualisation on Nobel Prize Winners </h1>
+            
+            <p> The Nobel Prize is a set of international prizes awarded anually to the biggest 
+                contributors of a particular field for that particular year. Categories include: </p>
+            
+            <div class="row">
+                <div class="four columns"><img src="icons/physics.png" class="icon"></div>
+                <div class="four columns"><img src="icons/chemistry.png" class="icon"></div>
+                <div class="four columns"><img src="icons/medicine.png" class="icon"></div>
+            </div>
+            <div class="row">
+                <div class="four columns"><h4> Physics </h4></div>
+                <div class="four columns"><h4> Chemistry </h4></div>
+                <div class="four columns"><h4> Medicine </h4></div>
+            </div>
+
+            <div class="row">
+                <div class="four columns"><img src="icons/literature.png" class="icon"></div>
+                <div class="four columns"><img src="icons/peace2.png" class="icon"></div>
+                <div class="four columns"><img src="icons/economics.png" class="icon"></div>
+            </div>
+            <div class="row">
+                <div class="four columns"><h4> Literature </h4></div>
+                <div class="four columns"><h4> Peace </h4></div>
+                <div class="four columns"><h4> Economics </h4></div>
+            </div>
+        </section>
+                
+        <section class="container padding">
+            <div class="border padding"></div>
+            <h2> Prize Statistics </h2>
+            <p> The Nobel Prize has been awarded a total of 579 times, 
+                below is the breakdown for each subject as well as the breakdown for the prizes that were shared: </p>
+            
+            <div class="row">
+                <div class="four columns" id="graph-a">
+                    <script type="text/javascript" src="scripts/a-bar.js"></script>
+                </div>
+                <div class="four columns" id="graph-b">
+                    <script type="text/javascript" src="scripts/b-bar.js"></script>
+                </div>
+                <div class="four columns" id="table-a">
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th> Category </th>
+                                <th> # of Prizes </th>
+                                <th> # of Laureates </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Physics </td>
+                                <td> 110 </td>
+                                <td> 204 </td>
+                            </tr>
+                            <tr>
+                                <td> Chemistry </td>
+                                <td> 108 </td>
+                                <td> 175 </td>
+                            </tr>
+                            <tr>
+                                <td> Medicine </td>
+                                <td> 107 </td>
+                                <td> 211 </td>
+                            </tr>
+                            <tr>
+                                <td> Literature </td>
+                                <td> 109 </td>
+                                <td> 113 </td>
+                            </tr>
+                            <tr>
+                                <td> Peace </td>
+                                <td> 97 </td>
+                                <td> 130 </td>
+                            </tr>
+                            <tr>
+                                <td> Economics </td>
+                                <td> 48 </td>
+                                <td> 78 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container padding">
+            <div class="border padding"></div>
+            <h2> Gender Distribution </h2>
+            <div class="row">
+                <div class="six columns" id="graph-c">
+                    <script type="text/javascript" src="scripts/c-donut.js"></script>
+                </div>
+            </div>
+        </section>
+	
+        <section class="container padding">
+            <div class="border padding"></div>
+            <h2> A Timeline Display </h2>
+            <div class="row" id="graph-d">
+                <script type="text/javascript" src="scripts/d-scatter.js"></script>
+            </div>
+        </section>
+	</body>
+
+</html>

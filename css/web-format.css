@@ -1,0 +1,52 @@
+.border {
+    border-top: 1px solid #2C3E50;
+}
+
+.padding {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+svg {
+    position: relative;
+    display: block;
+    height: 300;
+    width: 500;
+}
+
+.icon {
+    height: 128;
+    width: 128;
+}
+
+.tick {
+    font-size: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.legend {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 12px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 80px;
+  z-index: 10;
+}
+
+.x-axis {
+    outline-width: thin;
+}
